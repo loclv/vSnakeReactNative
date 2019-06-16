@@ -7,10 +7,8 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <View style={{flex: 1, backgroundColor: '#000'}}>
-          <Text style={styles.info}>AI</Text>
-        </View>
-        <Space />
+        <Space name='AI' />
+        <Space name='You' />
       </View>
     );
   }

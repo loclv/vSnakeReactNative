@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
+const data = {
+  'You': {
+    txt: 'You',
+    backgroundColor: '#121212',
+  },
+  'AI': {
+    txt: 'AI',
+    backgroundColor: '#000',
+  }
+}
+
 class Space extends Component {
 	render() {
+    const p = data[this.props.name];
 		return (
       <View style={{flex: 1,
-          backgroundColor: '#121212',
+          backgroundColor: p.backgroundColor,
           width: '100%'}}>
-        <Text style={styles.info}>You</Text>
+        <Text style={styles.info}>{p.txt}</Text>
       </View>
 		);
 	}
